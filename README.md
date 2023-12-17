@@ -8,40 +8,40 @@ A classe Aluno deve conter as seguintes características e comportamentos.
 
 Características :
 
-- ``id : long
+- id 
+  
+- nascimento 
     
-- ``nascimento : Date
+- ra 
     
-- ``ra : String
-    
-- ``nome : String
+- nome 
     
 
 Comportamentos :
 
-- ``String toString()    // Deve retornar um texto com os dados do aluno
+-  __str__    // Deve retornar um texto com os dados do aluno
     
 
 Crie uma classe chamada ``GestaoAlunos``, contendo as seguintes características e comportamentos.  
   
 Características:
 
-- ``índice : int      // Indica em qual posição deve ser guardada a próxima instância de aluno
+- índice : int      // Indica em qual posição deve ser guardada a próxima instância de aluno
     
-- ``alunos : Aluno[]  // Matriz com 50 alunos
+- alunos : Aluno[]  // lista
     
 
 Comportamentos:
 
-- ``void criar()
+-  criar()
     
-- ``void atualizar()  
+-  atualizar()  
     
-- ``void excluir()  
+-  excluir()  
     
-- ``void exibir()  
+-  exibir()  
     
-- ``void menu()  
+-  menu()  
     
 
   
@@ -59,7 +59,4 @@ Regras do sistema
   
 
                Pegue a primeira letra digitada pelo usuário e assuma como sendo a opção escolhida
-
-                    String textoMaiusculo = scan.nextLine().toUpperCase();  
-                    char letra = textoMaiusculo.charAt(0);  
                Conforme a opção escolhida o método deve invocar a função correspondente criar(), exibir(), excluir(), atualizar() ou System.exit(0) para sair do sistema.
